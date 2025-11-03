@@ -34,8 +34,6 @@
 
 package main
 
-import "fmt"
-
 func maxArea(height []int) int {
 	l, r := 0, len(height)-1
 	maximumArea := 0
@@ -55,11 +53,6 @@ func maxArea(height []int) int {
 		}
 	}
 	return maximumArea
-}
-
-func main() {
-	nums := []int{1, 8, 6, 2, 5, 4, 8, 3, 7}
-	fmt.Println(maxArea(nums))
 }
 
 func minHeight(a, b int) int {
